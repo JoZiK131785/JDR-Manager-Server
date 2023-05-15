@@ -76,6 +76,7 @@ const loginUser = (req, res) => {
             res.status(200).send({
             message: "Login Successful",
             email: user.email,
+            id: user._id,
             token,
             });
         })
