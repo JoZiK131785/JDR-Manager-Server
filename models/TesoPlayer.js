@@ -29,6 +29,10 @@ const TesoPlayerSchema = new mongoose.Schema({
         type: Object,
         required: true,
     },
+    session: {
+        type: Object,
+        required: true,
+    }
 });
 
 const tesoPlayers = mongoose.connection.useDb('TesoPlayers');
