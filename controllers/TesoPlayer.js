@@ -31,6 +31,7 @@ const createTesoPlayer = (req, res) => {
         armor: req.body.armor,
         inventaire: req.body.inventaire,
         spells: req.body.spells,
+        session: req.body.session,
     });
 
     player
@@ -56,6 +57,7 @@ const updateTesoPlayer = (req, res) => {
                 armor: req.body.armor,
                 inventaire: req.body.inventaire,
                 spells: req.body.spells,
+                session: req.body.session,
             },
         },
         { new: true },
